@@ -1,0 +1,22 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav{
+  background-color: rgb(112, 112, 239);
+  padding: 12px;
+}
+nav h1{
+  margin-left: 11rem;
+  color: rgb(234, 228, 221);
+}
+
+
+
+
+
+
+
