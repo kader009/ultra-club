@@ -10,8 +10,27 @@
   grid-template-columns: 4fr 1fr;
 }
 
-
-
+.sub-container{
+  background-color: rgb(78, 76, 76);
+  padding: 18px;
+  /* height: 100% !important; */
+}
+.sub-container h4,h6{
+margin-left: 18px;
+color: rgb(236, 238, 239);
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin-top: 18px;
+  background-color:dodgerblue;
+  padding: 15px;
+  color: aliceblue;
+  border-radius: 10px;
+  
+}
 
 
 

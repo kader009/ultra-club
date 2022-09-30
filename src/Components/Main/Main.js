@@ -1,24 +1,50 @@
 import React, { useEffect, useState } from 'react';
+import ShowData from '../ShowData/ShowData';
 import './Main.css'
 
 const Main = () => {
 
-  const [fake, getFake] = useState([])
+  const [collects, setCollect] = useState([])
   useEffect(() => {
-    fetch(`Fake.json`)
+    fetch('Fake.json')
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => setCollect(data))
   },[])
+
   return (
     <div className='main'>
       <div className="main-container">
-        <h1>this is for pic</h1>
+        {
+          collects.map(collect => <ShowData 
+            collect={collect} key={collect.id} 
+            ></ShowData>)
+            
+        }
 
       </div>
       <div className="sub-container">
-        <h3>this is hi</h3>
+        <h4>Abdul Kader</h4>
+        <h6>Dhake, Bangladesh</h6>
+
+        <div className='about'>
+
+        <div >
+          <h1>60<small>kg</small></h1>
+          <p>Weight</p>
+        </div>
+        <div>
+        <h1>5.6</h1>
+          <p>Height</p>
+        </div>
+        <div>
+        <h1>27<small>yrs</small></h1>
+          <p>Age</p>
+        </div>
+        </div>
+
 
       </div>
+      
     </div>
   );
 };
