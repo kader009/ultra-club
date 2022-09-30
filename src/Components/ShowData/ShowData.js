@@ -1,12 +1,15 @@
 import React from 'react';
 
 const ShowData = (props) => {
-  console.log(props);
-  // const {id, time, img } = props.collect;
-  // const {id, title} = props.collect;
+  // console.log(props);
+  // const { time } =collect;
+  // console.log(img);
+  const {id, title} = props.collect;
+  
   return (
     <div>
-      <h1>id:</h1>
+      <h1>only for buy: </h1>
+      <h2>Hellleo</h2>
     </div>
   );
 };

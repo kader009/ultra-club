@@ -3,12 +3,18 @@ import ShowData from '../ShowData/ShowData';
 import './Main.css'
 
 const Main = () => {
-
+  
   const [collects, setCollect] = useState([])
   useEffect(() => {
-    fetch('Fake.json')
-    .then(res => res.json())
-    .then(data => setCollect(data))
+    // fetch('fakedb.json')
+    // .then(res => res.json())
+    // .then(data => setCollect(data));
+    const fetchData = async() => {
+      const res = await fetch('https://raw.githubusercontent.com/hmathir/HAOA_API/main/data.json');
+      const data =await res.json();
+      setCollect(data);
+    }
+    fetchData();
   },[])
 
   return (
@@ -16,7 +22,8 @@ const Main = () => {
       <div className="main-container">
         {
           collects.map(collect => <ShowData 
-            collect={collect} key={collect.id} 
+            key={collect.id}
+            collect={collect}
             ></ShowData>)
             
         }
@@ -24,7 +31,7 @@ const Main = () => {
       </div>
       <div className="sub-container">
         <h4>Abdul Kader</h4>
-        <h6>Dhake, Bangladesh</h6>
+        <h6>Dhaka, Bangladesh</h6>
 
         <div className='about'>
 
