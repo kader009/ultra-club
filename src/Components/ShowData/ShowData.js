@@ -2,10 +2,15 @@ import React from 'react';
 import './ShowData.css'
 
 const ShowData = (props) => {
-  // console.log(props);
   // const { time } =props.collect;
   // console.log(img);
-  const {id, title, time, description,img} = props.collect || {};
+  const { title, time, description, img} = props.collect || {};
+  // console.log(props);
+  // const {AddtoCart} = props;
+
+  // const AddtoCart = () =>{
+  //   console.log('object');
+  // }
   
   return (
     <div className='showdata'>
@@ -13,7 +18,7 @@ const ShowData = (props) => {
       <h2>Title: {title} </h2>
       <p>Description: {description}</p>
       <h4>Time: {time}</h4>
-      <button className='btn'>Add to list</button>
+      <button onClick={() => props.AddtoCart(props.collect)} className='btn'>Add to list</button>
     </div>
   );
 };

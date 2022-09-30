@@ -5,12 +5,19 @@ import './Main.css'
 const Main = () => {
   
   const [collects, setCollect] = useState([])
+  const [add, setAdd] = useState([])
   useEffect(() => {
     fetch('fakedb.json')
     .then(res => res.json())
     .then(data => setCollect(data));
     
   },[])
+
+  const AddtoCart = (collect) =>{
+    // console.log(collect);
+    const newCart = [...add, collect]
+    setAdd(newCart);
+  }
 
   return (
     <div className='main'>
@@ -19,12 +26,14 @@ const Main = () => {
           collects.map(collect => <ShowData 
             key={collect.id}
             collect={collect}
+            AddtoCart={AddtoCart}
             ></ShowData>)
             
         }
 
       </div>
       <div className="sub-container">
+        <h1>lenght: {add.length}</h1>
         <h4>Abdul Kader</h4>
         <h6>Dhaka, Bangladesh</h6>
 
@@ -61,7 +70,7 @@ const Main = () => {
         </div>
 
         <div style={{marginTop:'15px',color:"#fff",marginLeft:'7px'}}>
-          <h3>Exercise time: </h3>
+          <h3>Exercise time: {add.time}</h3>
           {/* <input type="password" / > */}
           
         </div>
