@@ -1,4 +1,8 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .showdata img{
   width: 20rem;
   height: 50%;
@@ -6,12 +10,29 @@
 }
 
 .showdata{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 322px;
   height: 350px;
   margin-left: 40px;
+  position: relative;
+  border-radius: 10px;
+  background: #f1ebeb;
+  box-shadow:  20px 20px 60px #f9f6f6,;
+  /* -20px -20px 60px #afa9a9; */
+  margin-bottom: 10px
 }
-
+.btn{
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  /* margin-top: 1rem; */
+}
 
 
 

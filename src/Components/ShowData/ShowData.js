@@ -13,7 +13,7 @@ const ShowData = (props) => {
       <h2>Title: {title} </h2>
       <p>Description: {description}</p>
       <h4>Time: {time}</h4>
-      <button></button>
+      <button className='btn'>Add to list</button>
     </div>
   );
 };
