@@ -75,3 +75,30 @@ color: rgb(236, 238, 239);
   font-weight: 600;
   border-radius: 6px;
 }
+
+
+@media screen and (max-width:900px) {
+  .main-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    padding-top: 7%;
+  }
+}
+@media screen and (max-width:776px) {
+  .main-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4px;
+    padding-top: 7%;
+  }
+  .sub-container{
+    /* background-color: red; */
+    padding: 5px;
+    /* height: 100% !important; */
+  }
+}
+
+
+
+
+
+
