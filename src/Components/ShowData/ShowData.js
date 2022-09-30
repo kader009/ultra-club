@@ -18,8 +18,9 @@ const ShowData = (props) => {
       <h2>Title: {title} </h2>
       <p>Description: {description}</p>
       <h4>Time: {time}</h4>
-      <button onClick={() => props.AddtoCart(props.collect)} className='btn'>Add to list</button>
+      <button  onClick={() => props.AddtoCart(props.collect)} className='btn'>Add to list</button>
     </div>
+    
   );
 };
 

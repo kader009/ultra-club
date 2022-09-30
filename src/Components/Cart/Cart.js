@@ -60,12 +60,14 @@ const Cart = (props) => {
         </div>
         <div className="activity">
           <button>Activity Completed</button>
+          
         </div>
 
 
 
 
       </div>
+      
     </div>
   );
 };
