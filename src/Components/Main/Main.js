@@ -44,6 +44,39 @@ const Main = () => {
         </div>
         </div>
 
+        <div className='add'>
+
+        <h2>Add A Break</h2>
+        </div>
+        <div className='btn-grp'>
+          <button><small>10s</small></button>
+          <button><small>20s</small></button>
+          <button><small>30s</small></button>
+          <button><small>40s</small></button>
+          
+        </div>
+
+        <div className="detail">
+          <h2>Exercixe Details</h2>
+        </div>
+
+        <div style={{marginTop:'15px',color:"#fff",marginLeft:'7px'}}>
+          <h3>Exercise time: </h3>
+          {/* <input type="password" / > */}
+          
+        </div>
+
+        <div style={{marginTop:'15px',color:"#fff",marginLeft:'7px'}}>
+          <h3>Break time: </h3>
+          {/* <input type="password" / > */}
+          
+        </div>
+        <div className="activity">
+          <button>Activity Completed</button>
+        </div>
+
+
+
 
       </div>
       
