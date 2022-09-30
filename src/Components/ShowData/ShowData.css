@@ -1,7 +1,16 @@
 
+.showdata img{
+  width: 20rem;
+  height: 50%;
+  border-radius: 7px;
+}
 
-
-
+.showdata{
+  border: 1px solid red;
+  width: 322px;
+  height: 350px;
+  margin-left: 40px;
+}
 
 
 

@@ -6,15 +6,10 @@ const Main = () => {
   
   const [collects, setCollect] = useState([])
   useEffect(() => {
-    // fetch('fakedb.json')
-    // .then(res => res.json())
-    // .then(data => setCollect(data));
-    const fetchData = async() => {
-      const res = await fetch('https://raw.githubusercontent.com/hmathir/HAOA_API/main/data.json');
-      const data =await res.json();
-      setCollect(data);
-    }
-    fetchData();
+    fetch('fakedb.json')
+    .then(res => res.json())
+    .then(data => setCollect(data));
+    
   },[])
 
   return (
